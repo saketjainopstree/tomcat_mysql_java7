@@ -22,7 +22,7 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64/
 ENV PATH $JAVA_HOME/bin:$PATH
 
-COPY sample.war /opt/tomcat8/webapps
+COPY Spring3HibernateApp.war /opt/tomcat8/webapps
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 3306
